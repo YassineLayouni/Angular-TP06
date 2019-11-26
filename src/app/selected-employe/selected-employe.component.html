@@ -1,0 +1,8 @@
+<h1>Détail Employé</h1>
+<ul class="list-group">
+    <li class="list-group-item" style="font-weight: bold;">{{employe.matricule}}</li>
+    <li class="list-group-item">{{employe.nom}}</li>
+    <li class="list-group-item">{{employe.fonction}}</li>
+    <li class="list-group-item"><input type="checkbox" disabled [checked]="employe.expert">Expert</li>
+</ul>
+<button class="btn btn-primary" [routerLink]="['/employesList']">Retour</button>
